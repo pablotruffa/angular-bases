@@ -1,0 +1,42 @@
+<h3>Crear una persona</h3>
+
+<form (ngSubmit)="emitPersona()">
+  <div class="mb-3">
+    <label for="nombre">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nombre"
+      name="nombre"
+      [(ngModel)]="persona.nombre"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="apellido">Apellido</label>
+    <input
+      type="text"
+      class="form-control"
+      id="apellido"
+      name="apellido"
+      [(ngModel)]="persona.apellido"
+    />
+  </div>
+  <button class="btn btn-primary">Crear</button>
+</form>
+
+<!-- <div>
+  <pre>
+    {{ persona | json }}
+  </pre>
+</div> -->
+
+<!-- <button *ngIf="creados == 0" (click)="crear()">Crear persona</button>
+
+<div *ngIf="creados == 0; else mostrarelotrotemplate">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo tenetur
+    praesentium dolores optio expedita, totam eos fuga, laborum eligendi aliquam
+    numquam, sapiente explicabo possimus impedit iure enim? Amet, ratione.
+  </p>
+</div>
+<ng-template #mostrarelotrotemplate> Creados: {{ creados }} </ng-template> -->
